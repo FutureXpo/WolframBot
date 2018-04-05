@@ -49,6 +49,8 @@ WolframPlugin.prototype.respond = function (bot,query,id/*query, channel, bot,tm
 	                for(var c=0; c<subpod.plaintext.length; c++)
 	                {
 	                    response += '\t'+subpod.plaintext[c];
+						bot.sendMessage(id, response);
+						response = "";
 	                }
 								/*	for(var d=0; d<subpod.img.length;d++)
 									{
