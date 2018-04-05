@@ -25,6 +25,8 @@ bot.onText(/^/, function (msg) {
 	
 	var text = args.join(" ");
 	
+	console.log(text+'---'+command);
+	
 	switch(command) {
 		case 'start':
 			answer = 'Чтобы воспользоваться wolframalpha введите команду /wolfram [запрос] ';
