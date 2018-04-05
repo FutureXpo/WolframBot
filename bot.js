@@ -40,7 +40,7 @@ bot.onText(/^/, function (msg) {
 				wolfram_plugin.respond(bot,text,id);
 			});
 			break;
-	
+	}
 });
 
 module.exports = bot;
