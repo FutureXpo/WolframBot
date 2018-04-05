@@ -25,15 +25,15 @@ bot.onText(/^/, function (msg) {
 	
 	var text = args.join(" ");
 	
-	console.log(text+'---'+command);
+//	console.log(text+'---'+command);
 	
 	switch(command) {
-		case 'start':
+		case '/start':
 			answer = 'Чтобы воспользоваться wolframalpha введите команду /wolfram [запрос] ';
 			bot.sendMessage(id, answer);
 			break;
 			
-		case 'wolfram':
+		case '/wolfram':
 			answer = '*Ожидание Wolfram Alpha...*';
 			if(!text){
 				answer = 'Использование: /wolfram <запрос> (Например /wolfram integrate 4x)';
