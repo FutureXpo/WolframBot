@@ -49,17 +49,15 @@ WolframPlugin.prototype.respond = function (bot,query,id/*query, channel, bot,tm
 	                for(var c=0; c<subpod.plaintext.length; c++)
 	                {
 	                    response += '\t'+subpod.plaintext[c];
-						bot.sendMessage(id, response);
-						response = "";
-	                }
-								/*	for(var d=0; d<subpod.img.length;d++)
+					}
+									for(var d=0; d<subpod.img.length;d++)
 									{
 										response += "\n" + subpod.img[d].$.src;
 										bot.sendMessage(id, response);
 										response = "";
-									}*/
+									}
 	            }
-							response += "\n";
+				response += "\n";
 	        }
 				}	else {
 					if(result.queryresult.hasOwnProperty("didyoumeans")){
